@@ -21,18 +21,20 @@
         </tr>
         <tr>
             <td>Số tiền cả gốc lẫn lãi:</td>
-            <td><div id="showResult"></div></td>
+            <td>
+                <div id="showResult"></div>
+            </td>
         </tr>
     </table>
     <input type="button" onclick="calc()" value="Calc">
 </form>
 <script>
-    function calc(){
+    function calc() {
         let a = parseInt(document.getElementById("value").value);
         let b = parseInt(document.getElementById("month").value);
         let c = parseInt(document.getElementById("interest_rate").value);
-        let cost = Math.round(a*Math.pow((1+c/100),b)*100)/100;
-        document.getElementById("showResult").innerHTML = cost+" $";
+        let cost = Math.round(a * Math.pow((1 + c / 100), b) * 100) / 100;
+        document.getElementById("showResult").innerHTML = cost + " $";
     }
 </script>
 </body>
