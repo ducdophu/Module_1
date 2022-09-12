@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10: Viết chương trình tính giá điện.</title>
+</head>
+<body>
+<script>
+    let kWh = parseInt(prompt("Nhập số điện đã dùng:"))
+    let cost = 0;
+    if (kWh <= 200) {
+        cost = kWh*2;
+    } else {
+        cost = 200*2 + (kWh-200)*1.5;
+    }
+    alert("Số tiền điện bạn phải trả: "+cost+"$.");
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.</title>
+</head>
+<body>
+<script>
+    let arr=[];
+    for (let i=0; i<10; i++) {
+        arr[i]=parseInt(prompt("Phần tử thứ " +i));
+    }
+    document.write("Mảng vừa được nhập vào là: " +arr + "<br>");
+
+    for (let i = 0, swap; i < 9; i++) {
+        for (let j = i + 1; j < 9; j++) {
+            if (arr[i] < arr[j]) {
+                swap=arr[i];
+                arr[i]=arr[j];
+                arr[j]=swap;
+            }
+            //nếu có nghịch thế thì đổi chỗ
+        }
+    }
+    document.write("Mảng sau khi được sắp xếp giảm dần là: " +arr);
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập cạnh a của tam giác ABC:"))
+    let b = parseInt(prompt("Nhập cạnh b của tam giác ABC:"))
+    let c = parseInt(prompt("Nhập cạnh c của tam giác ABC:"))
+    if (a>0 && b>0 && c>0 && (a+b)>c && (b+c)>a && (c+a)>b) {
+        alert(a+", "+b+", "+c+" là ba cạnh của một tam giác!");
+    } else {
+        alert(a+", "+b+", "+c+" không là ba cạnh của một tam giác!");
+    }
+</script>
+</body>
+</html>

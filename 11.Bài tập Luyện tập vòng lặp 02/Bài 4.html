@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In tam giác vuông, các góc vuông nằm ở các vị trí khác nhau.</title>
+</head>
+<body>
+<script>
+    let i, j;
+    for (i = 1; i < 6; i++) {
+        for (j = 1; j <= i; j++) {
+            document.write("*" + "&nbsp");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+    //
+    let a, b;
+    for (i = 5; i > 0; i--) {
+        for (j = 1; j <= i; j++) {
+            document.write("*" + "&nbsp");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+    //
+    let x, y, z;
+    for (x = 1; x < 6; x++) {
+        for (y = 1; y < (6 - x); y++) {
+            document.write("&nbsp&nbsp&nbsp");
+        }
+        for (z = 0; z < x; z++) {
+            document.write("*" + "&nbsp");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+    //
+    let k, l, m;
+    for (k = 1; k < 6; k++) {
+        for (l = 1; l < k; l++) {
+            document.write("&nbsp&nbsp&nbsp");
+        }
+        for (m = 0; m < (6 - k); m++) {
+            document.write("*" + "&nbsp");
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>

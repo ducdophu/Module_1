@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra N số Nguyên tố đầu tiên</title>
+</head>
+<body>
+<form>
+    <h4>Bạn muốn in ra bao nhiêu số Nguyên tố đầu tiên?</h4>
+    <input id="number" type="number" value="">
+    <input id="1" onclick="check();" type="button" value="In ra">
+    <p id="demo"></p>
+</form>
+
+<script>
+    function check() {
+        let N = parseInt(document.getElementById("number").value);
+        let number = 1, countN;
+        for (countN = 0; countN < N; number++) {
+            let i, count;
+            for (i = 1, count = 0; i <= number; i++) {
+                if (number % i == 0) {
+                    count = count + 1;
+                }
+            }
+            if (count == 2) {
+                document.writeln(+number + ", ");
+                ++countN;
+            }
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình tìm xem V có nằm trong mảng số nguyên vừa nhập không? In ra thông báo.</title>
+</head>
+<body>
+<script>
+    let arr=[];
+    for (let i=0; i<10; i++) {
+        arr[i]=parseInt(prompt("Phần tử thứ " +i));
+    }
+
+    let v=parseInt(prompt("Nhập vào số Nguyên bất kỳ: "));
+    let flag=true;
+    for (let i=0; i<10; i++) {
+        if (arr[i]==v) {
+            alert(+v + " is in the array!");
+            flag=false;
+            break;
+        }
+    }
+    if(flag) {
+        alert(+v + " is not in the array!");
+    }
+</script>
+</body>
+</html>

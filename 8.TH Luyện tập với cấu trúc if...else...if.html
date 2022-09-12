@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login.html</title>
+</head>
+<body>
+    <script>
+        let userName=prompt("Mời bạn nhập tên người dùng từ bàn phím!");
+        if(userName == "admin") {
+            let passWord=prompt("Mời bạn nhập mật khẩu từ bàn phím!");
+            if(passWord == "TheMaster") {
+                alert("Welcome!");
+            } else if(passWord == null) {
+                        alert("Canceled!");
+                    } else {
+                        alert("Wrong password!");
+                    }
+        } else if(userName == null) {
+                alert("Canceled!");
+                } else {
+                        alert("I don’t know you!");
+                }
+    </script>
+</body>
+</html>

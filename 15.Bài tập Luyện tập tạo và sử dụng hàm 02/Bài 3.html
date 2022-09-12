@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm tính giai thừa của một số Nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.</title>
+</head>
+<body>
+<script>
+    let number = prompt("Nhập vào một số Nguyên bất kỳ: ");
+
+    function factorial_Number(x) {
+        let sum = 1;
+        for (let i = 1; i <= x; i++) {
+            sum = sum * i;
+        }
+        return sum;
+    }
+
+    //Trong ham da viet thi x la tham so, doi so truyen vao la number (gia tri cua mot so Nguyen bat ky)
+
+    alert("Giai thừa của " + number + " là: " + factorial_Number(number));
+</script>
+</body>
+</html>

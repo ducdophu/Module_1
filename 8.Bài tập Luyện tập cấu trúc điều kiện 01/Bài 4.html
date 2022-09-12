@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+    <form>
+        Nhập vào số thứ nhất:
+        <input id="1" type="number" value="">&nbsp&nbsp&nbsp
+        Nhập vào số thứ hai:
+        <input id="2" type="number" value="">&nbsp&nbsp&nbsp
+        Nhập vào số thứ ba:
+        <input id="3" type="number" value="">&nbsp&nbsp&nbsp
+
+        <input type="button" onclick="check();" value="Kết quả"><br>
+        <p id="result"></p>
+    </form>
+
+    <script>
+        function check() {
+            let a = parseInt(document.getElementById("1").value);
+            let b = parseInt(document.getElementById("2").value);
+            let c = parseInt(document.getElementById("3").value);
+            let max = a;
+
+            if (max <= b) {
+                max = b;
+                if (max <= c) {
+                    max = c;
+                }
+            } else if(max < c) {
+                max=c;
+            }
+            document.getElementById("result").innerHTML = "Số lớn nhất trong 3 số vừa nhập vào là: " + max;
+        }
+    </script>
+</body>
+</html>

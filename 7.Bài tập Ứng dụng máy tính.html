@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <h2>Calculator</h2>
+    <br>
+    <input id="1" type="number" name="1">
+    <input id="2" type="number" name="2">
+    <br><br>
+    <input type="button" onclick="Add();" value="Addition(+)">
+    <input type="button" onclick="Sub()" value="Subtraction(-)">
+    <input type="button" onclick="Multi();" value="Multiplication(x)">
+    <input type="button" onclick="Divi();" value="Division(/)">
+    <p id="result"></p>
+</form>
+
+<script>
+    function Add(){
+        let a;
+        let b;
+        let re;
+
+        a=document.getElementById('1').value;
+        b=document.getElementById('2').value;
+
+        // Đổi sang kiểu Number
+        a=parseInt(a);
+        b=parseInt(b);
+
+        re=a+b;
+
+        document.getElementById("result").innerHTML="Addition: "+re;
+    }
+    function Sub(){
+        let a;
+        let b;
+        let re;
+
+        a=document.getElementById('1').value;
+        b=document.getElementById('2').value;
+
+        // Đổi sang kiểu Number
+        a=parseInt(a);
+        b=parseInt(b);
+
+        re=a-b;
+
+        document.getElementById("result").innerHTML="Subtraction: "+re;
+    }
+    function Multi(){
+        let a;
+        let b;
+        let re;
+
+        a=document.getElementById('1').value;
+        b=document.getElementById('2').value;
+
+        // Đổi sang kiểu Number
+        a=parseInt(a);
+        b=parseInt(b);
+
+        re=a*b;
+
+        document.getElementById("result").innerHTML="Multiplication: "+re;
+    }
+    function Divi(){
+        let a;
+        let b;
+        let re;
+
+        a=document.getElementById('1').value;
+        b=document.getElementById('2').value;
+
+        // Đổi sang kiểu Number
+        a=parseInt(a);
+        b=parseInt(b);
+
+        re=a/b;
+
+        document.getElementById("result").innerHTML="Division: "+re.toFixed(3);
+    }
+</script>
+</body>
+</html>

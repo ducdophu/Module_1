@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+    <form>
+        <h4>Nhập vào tuổi của học sinh.</h4>
+        <input id="1" type="number" value="">
+        <input type="button" onclick="check();" value="Kết quả"><br>
+        <p id="result"></p>
+    </form>
+
+    <script>
+        function check() {
+            let a=document.getElementById("1").value;
+            if(a<16) {
+                document.getElementById("result").innerHTML= " Học sinh chưa đủ tuổi vào học lớp 10.";
+            } else document.getElementById("result").innerHTML= " Học sinh đã đủ tuổi vào học lớp 10.";
+        }
+    </script>
+</body>
+</html>

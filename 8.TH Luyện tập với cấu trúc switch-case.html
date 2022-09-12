@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login.html</title>
+</head>
+<body>
+    <form>
+        <select id="br" name="browser">
+            <option value="Edge">Adge</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Safari">Safari</option>
+            <option value="Opera">Opera</option>
+        </select>
+
+        <input type="button" onclick="checkBrowser();" value="Check Browser!">
+
+        <p id="result"></p>
+    </form>
+    <script>
+        function checkBrowser() {
+            let browser=document.getElementById("br").value;
+            switch (browser) {
+                case 'Edge':
+                    document.getElementById("result").innerHTML="You've got the Edge!";
+                    break;
+                case 'Chrome':
+                case 'Firefox':
+                case 'Safari':
+                case 'Opera':
+                    document.getElementById("result").innerHTML="Okay we support these browsers too!";
+                    break;
+                default:
+                    document.getElementById("result").innerHTML="We hope that this page looks ok!";
+            }
+        }
+    </script>
+</body>
+</html>

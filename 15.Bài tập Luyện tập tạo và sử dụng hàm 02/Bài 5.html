@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm nhận vào 3 số Nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.</title>
+</head>
+<body>
+<script>
+    function check_Max() {
+        let a = prompt("Nhập vào số Nguyên thứ nhất: ");
+        let b = prompt("Nhập vào số Nguyên thứ hai: ");
+        let c = prompt("Nhập vào số Nguyên thứ ba: ");
+        let max = a;
+
+        if (max <= b) {
+            max = b;
+            if (max <= c) {
+                max = c;
+            }
+        } else if (max < c) {
+            max = c;
+        }
+        alert("Số lớn nhất trong 3 số " + a + ", " + b + ", " + c + " là: " + max);
+    }
+
+    check_Max();
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng
+        không. Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.</title>
+</head>
+<body>
+<script>
+    function check_Array() {
+        let arr = [];
+        let n = parseInt(prompt("Bạn muốn tạo một mảng ký tự gồm bao nhiêu phần tử?"));
+        for (let i = 0; i < n; i++) {
+            arr[i] = prompt("Nhập vào một ký tự có index: " + i);
+        }
+        let V = prompt("Nhập vào một ký tự bất kỳ: ");
+
+        alert("Mảng ký tự vừa nhập: " + arr);
+        alert("Ký tự muốn kiểm tra: " + V);
+
+        let count = 0, flag = false;
+        for (let i = 0; i < n; i++) {
+            if (arr[i] == V) {
+                count++;
+                flag = true;
+            }
+        }
+        if (flag) {
+            alert(count);
+        } else {
+            alert(-1);
+        }
+    }
+
+    check_Array();
+</script>
+</body>
+</html>

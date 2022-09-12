@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra năm nhuận</title>
+</head>
+<body>
+    <h4>Nhập vào một năm bất kì</h4>
+    <form>
+        <input type="number" id="leapyear">
+        <input type="button" onclick="checkleapyear();" value="Kiểm tra">
+        <p id="result"></p>
+    </form>
+    <script>
+        function checkleapyear() {
+            let year=parseInt(document.getElementById("leapyear").value);
+            let isleapyear=true;
+            if(year%4 == 0) {
+                if(year%100 == 0) {
+                    if(year%400 == 0) {
+                        isleapyear=true;
+                    } else {
+                        isleapyear=false;
+                    }
+                }
+            } else {
+                isleapyear=false;
+            }
+            if (isleapyear) {
+                document.getElementById("result").innerHTML= "Năm " +year + " là năm nhuận!";
+            } else {
+                document.getElementById("result").innerHTML= "Năm " +year + " là năm KHÔNG nhuận!";
+            }
+        }
+    </script>
+</body>
+</html>

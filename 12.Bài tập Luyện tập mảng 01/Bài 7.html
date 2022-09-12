@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi Mảng.</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = parseInt(prompt("Phần tử thứ " + i));
+    }
+    document.write("Mảng vừa được nhập vào là: " + arr + "<br>");
+
+    let v = parseInt(prompt("Nhập vào số Nguyên bất kỳ: "));
+    let flag = false, index = 0;
+    for (let i = 0; i < 10; i++) {
+        if (arr[i] == v) {
+            alert(+v + " is in the array!");
+            flag = true;
+            index = i;
+            break;
+        }
+    }
+    if (flag) {
+        for (index; index < 9; index++) {
+            arr[index] = arr[(index + 1)];
+        }
+        // arr[9]=0;
+        arr.pop();
+        document.write("Mảng sau khi xóa phần tử " + v + " là: " + arr);
+
+    } else {
+        alert(+v + " is not in the array!");
+    }
+</script>
+</body>
+</html>

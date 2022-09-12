@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình để đếm số từ trong một chuỗi.</title>
+</head>
+<body>
+<script>
+    let a = "Chuong trinh de dem so tu trong mot chuoi"
+    let b = a.split("")
+    let count = 0;
+
+    for (let i = 0; i < b.length; i++) {
+        if (b[i] === " ") {
+            count++;
+        }
+    }
+    document.writeln("Số từ trong một chuỗi đã cho là: " + (count + 1));
+</script>
+</body>
+</html>

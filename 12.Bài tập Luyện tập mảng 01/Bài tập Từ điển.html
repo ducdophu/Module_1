@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<h3>Dictionary</h3>
+<label>Nhập từ tiếng anh: </label>
+<input type="text" id="text">
+<button onclick="trans()">Dịch</button>
+<script>
+    function trans() {
+        let EnArr = ['hello', 'good bye', 'thank you'];
+        let VnArr = ['xin chào', 'tạm biệt', 'cảm ơn'];
+        let j = -1;
+        let inputText = document.getElementById('text').value;
+        for (let i = 0; i < EnArr.length; i++) {
+            if (inputText === EnArr[i]) {
+                j = i;
+                break;
+            }
+        }
+        if (j !== -1) {
+            alert(VnArr[j]);
+        } else {
+            alert("not found");
+        }
+    }
+</script>
+</body>
+</html>

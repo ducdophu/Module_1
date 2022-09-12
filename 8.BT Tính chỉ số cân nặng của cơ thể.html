@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+    <script>
+        let weight=prompt("Nhập vào cân nặng (kilogram) của bạn!");
+        let height=prompt("Nhập chiều cao (mét) của bạn!");
+        let bmi=weight/(height*height);
+        if (bmi < 18.5) {
+            document.write(+bmi.toFixed(1) + "<br>");
+            document.write("Underweight");
+        }
+        else if (bmi < 25.0) {
+            document.write(+bmi.toFixed(1) + "<br>");
+            document.write("Normal");
+        }
+        else if (bmi < 30.0) {
+            document.write(+bmi.toFixed(1)+"<br>");
+            document.write("Overweight");
+        }
+        else {
+            document.write(+bmi.toFixed(1) + "<br>");
+            document.write("Obese");
+        }
+    </script>
+</body>
+</html>

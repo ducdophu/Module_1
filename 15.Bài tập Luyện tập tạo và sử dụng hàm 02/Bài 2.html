@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được.</title>
+</head>
+<body>
+<script>
+    let R = prompt("Nhập vào Bán kính của hình tròn: ");
+    const PI = 3.1415926;
+
+    function area_circle(x) {
+        return PI * x * x;
+    }
+
+    function circumference_circle(x) {
+        return 2 * PI * x;
+    }
+
+    //trong 2 ham da viet thi x la tham so, doi so truyen vao la R (gia tri cua Ban kinh hinh tron can tinh)
+
+    alert("Diện tích của hình tròn có Bán kính " + R + " là: " + area_circle(R).toFixed(3));
+    alert("Chu vi của hình tròn có Bán kính " + R + " là: " + circumference_circle(R).toFixed(3));
+</script>
+</body>
+</html>

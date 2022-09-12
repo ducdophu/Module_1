@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm truyền vào mảng số Nguyên bất kỳ, sau đó đảo ngược mảng số Nguyên đó.</title>
+</head>
+<body>
+<script>
+    function reverse_arr(arr) {
+        return arr.reverse();
+    }
+
+    function reverseArray() {
+        let arr = [];
+        let n = parseInt(prompt("Bạn muốn tạo một mảng số Nguyên gồm bao nhiêu phần tử?"));
+        for (let i = 0; i < n; i++) {
+            arr[i] = prompt("Nhập vào phần tử có index: " + i);
+        }
+        alert("Mảng trước khi đảo ngược là: " + arr);
+        alert("Mảng sau khi đảo ngược là: " + reverse_arr(arr));
+    }
+
+    reverseArray();
+</script>
+</body>
+</html>

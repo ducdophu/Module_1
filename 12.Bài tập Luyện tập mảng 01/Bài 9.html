@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c. Hiển thị mảng c.</title>
+</head>
+<body>
+<script>
+    let a=[],c=[];
+    for (let i=0; i<10; i++) {
+        a[i]=parseInt(prompt("Phần tử thứ " +i + " của Mảng a:"));
+        c[i]=a[i];
+    }
+
+    let b=[];
+    for (let i=10; i<20; i++) {
+        b[(i-10)]=parseInt(prompt("Phần tử thứ " +(i-10) + " của Mảng b:"));
+        c[i]=b[(i-10)];
+    }
+
+    document.write("Mảng a vừa được nhập vào là: " +a + "<br>");
+    document.write("Mảng b vừa được nhập vào là: " +b + "<br>");
+    document.write("Mảng c vừa được nhập vào là: " +c + "<br>");
+</script>
+</body>
+</html>
