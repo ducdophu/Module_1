@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả
+        về true, ngược lại trả về false.</title>
 </head>
 <body>
+<script>
+    function check() {
+        let number = parseInt(prompt("Nhập vào một số bất kỳ: "));
+        if (number > 0) {
+            alert(true);
+        } else {
+            alert(false);
+        }
+    }
 
+    check();
+</script>
 </body>
 </html>
