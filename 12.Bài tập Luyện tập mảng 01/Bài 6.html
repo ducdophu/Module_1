@@ -6,21 +6,21 @@
 </head>
 <body>
 <script>
-    let arr=[];
-    for (let i=0; i<10; i++) {
-        arr[i]=parseInt(prompt("Phần tử thứ " +i));
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = parseInt(prompt("Phần tử thứ " + i));
     }
 
-    let v=parseInt(prompt("Nhập vào số Nguyên bất kỳ: "));
-    let flag=true;
-    for (let i=0; i<10; i++) {
-        if (arr[i]==v) {
+    let v = parseInt(prompt("Nhập vào số Nguyên bất kỳ: "));
+    let flag = true;
+    for (let i = 0; i < 10; i++) {
+        if (arr[i] == v) {
             alert(+v + " is in the array!");
-            flag=false;
+            flag = false;
             break;
         }
     }
-    if(flag) {
+    if (flag) {
         alert(+v + " is not in the array!");
     }
 </script>
