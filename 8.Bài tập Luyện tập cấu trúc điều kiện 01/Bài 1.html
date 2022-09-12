@@ -5,21 +5,21 @@
     <title>Bài 1</title>
 </head>
 <body>
-    <form>
-        <input id="1" type="number" value="">
-        <input id="2" type="number" value="">
-        <input type="button" onclick="check();" value="Kiểm tra"><br>
-        <p id="result"></p>
-    </form>
+<form>
+    <input id="1" type="number" value="">
+    <input id="2" type="number" value="">
+    <input type="button" onclick="check();" value="Kiểm tra"><br>
+    <p id="result"></p>
+</form>
 
-    <script>
-        function check() {
-            let a=document.getElementById("1").value;
-            let b=document.getElementById("2").value;
-            if(a%b == 0) {
-                document.getElementById("result").innerHTML= +a + " chia hết cho " +b;
-            } else document.getElementById("result").innerHTML= +a + " không chia hết cho " +b;
-        }
-    </script>
+<script>
+    function check() {
+        let a = document.getElementById("1").value;
+        let b = document.getElementById("2").value;
+        if (a % b == 0) {
+            document.getElementById("result").innerHTML = +a + " chia hết cho " + b;
+        } else document.getElementById("result").innerHTML = +a + " không chia hết cho " + b;
+    }
+</script>
 </body>
 </html>

@@ -12,26 +12,26 @@
 <!--400 đồng cho mỗi phút gọi của 150 phút tiếp theo.-->
 <!--200 đồng cho bất kỳ mỗi phút nào sau 200 phút đầu tiên.-->
 
-    <form>
-        <h4>Nhập vào số phút đã gọi trong tháng:</h4>
-        <input id="1" type="number" value=""><br><br>
-        <input type="button" onclick="check();" value="Kết quả">
-        <p id="result"></p>
-    </form>
+<form>
+    <h4>Nhập vào số phút đã gọi trong tháng:</h4>
+    <input id="1" type="number" value=""><br><br>
+    <input type="button" onclick="check();" value="Kết quả">
+    <p id="result"></p>
+</form>
 
-    <script>
-        function check() {
-            const phicodinh=25;
-            let sophut = parseInt(document.getElementById("1").value);
+<script>
+    function check() {
+        const phicodinh = 25;
+        let sophut = parseInt(document.getElementById("1").value);
 
-            if(sophut <= 50){
-                document.getElementById("result").innerHTML = "Tiền cước điện thoại của tháng này là: " +(phicodinh + sophut*0.6) + " nghìn VNĐ";
-            } else if(sophut <= 200 && sophut > 50) {
-                    document.getElementById("result").innerHTML = "Tiền cước điện thoại của tháng này là: " +(55 + (sophut-50)*0.4) + " nghìn VNĐ";
-                    } else {
-                            document.getElementById("result").innerHTML = "Tiền cước điện thoại của tháng này là: " +(115 + (sophut-200)*0.2) + " nghìn VNĐ";
-                        }
+        if (sophut <= 50) {
+            document.getElementById("result").innerHTML = "Tiền cước điện thoại của tháng này là: " + (phicodinh + sophut * 0.6) + " nghìn VNĐ";
+        } else if (sophut <= 200 && sophut > 50) {
+            document.getElementById("result").innerHTML = "Tiền cước điện thoại của tháng này là: " + (55 + (sophut - 50) * 0.4) + " nghìn VNĐ";
+        } else {
+            document.getElementById("result").innerHTML = "Tiền cước điện thoại của tháng này là: " + (115 + (sophut - 200) * 0.2) + " nghìn VNĐ";
         }
-    </script>
+    }
+</script>
 </body>
 </html>

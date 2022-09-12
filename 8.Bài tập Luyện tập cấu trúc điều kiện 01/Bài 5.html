@@ -5,41 +5,41 @@
     <title>Bài 5: Xếp loại học lực qua điểm kiểm tra</title>
 </head>
 <body>
-    <form>
-        Nhập vào điểm kiểm tra một tiết (Hệ số 1):
-        <input id="1" type="number" value=""><br><br>
-        Nhập vào điểm thi giữa kì (Hệ số 2):&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
-        <input id="2" type="number" value=""><br><br>
-        Nhập vào điểm thi cuối kì (Hệ số 3):&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
-        <input id="3" type="number" value=""><br><br>
+<form>
+    Nhập vào điểm kiểm tra một tiết (Hệ số 1):
+    <input id="1" type="number" value=""><br><br>
+    Nhập vào điểm thi giữa kì (Hệ số 2):&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
+    <input id="2" type="number" value=""><br><br>
+    Nhập vào điểm thi cuối kì (Hệ số 3):&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp
+    <input id="3" type="number" value=""><br><br>
 
-        <input type="button" onclick="check();" value="Kết quả"><br>
-        <p id="average"></p>
-        <p id="result"></p>
-    </form>
+    <input type="button" onclick="check();" value="Kết quả"><br>
+    <p id="average"></p>
+    <p id="result"></p>
+</form>
 
-    <script>
-        function check() {
-            let a = parseInt(document.getElementById("1").value);
-            let b = parseInt(document.getElementById("2").value);
-            let c = parseInt(document.getElementById("3").value);
-            let average = (a + 2*b +3*c)/6;
+<script>
+    function check() {
+        let a = parseInt(document.getElementById("1").value);
+        let b = parseInt(document.getElementById("2").value);
+        let c = parseInt(document.getElementById("3").value);
+        let average = (a + 2 * b + 3 * c) / 6;
 
-            document.getElementById("average").innerHTML = "Điểm số trung bình môn là: " +average.toFixed(1);
+        document.getElementById("average").innerHTML = "Điểm số trung bình môn là: " + average.toFixed(1);
 
-            if(average <= 10 && average >= 9){
-                document.getElementById("result").innerHTML = "Xếp loại: GIỎI";
-            } else if(average<9 && average >= 7) {
-                    document.getElementById("result").innerHTML = "Xếp loại: KHÁ";
-                    } else if(average<7 && average >= 5) {
-                            document.getElementById("result").innerHTML = "Xếp loại: TRUNG BÌNH";
-                        } else if(average<5 && average >= 3) {
-                                document.getElementById("result").innerHTML = "Xếp loại: YẾU";
-                                } else {
-                                        document.getElementById("result").innerHTML = "Xếp loại: KÉM";
-                                }
+        if (average <= 10 && average >= 9) {
+            document.getElementById("result").innerHTML = "Xếp loại: GIỎI";
+        } else if (average < 9 && average >= 7) {
+            document.getElementById("result").innerHTML = "Xếp loại: KHÁ";
+        } else if (average < 7 && average >= 5) {
+            document.getElementById("result").innerHTML = "Xếp loại: TRUNG BÌNH";
+        } else if (average < 5 && average >= 3) {
+            document.getElementById("result").innerHTML = "Xếp loại: YẾU";
+        } else {
+            document.getElementById("result").innerHTML = "Xếp loại: KÉM";
         }
+    }
 
-    </script>
+</script>
 </body>
 </html>
