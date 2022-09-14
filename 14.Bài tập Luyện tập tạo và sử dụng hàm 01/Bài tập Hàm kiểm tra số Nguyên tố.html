@@ -30,12 +30,14 @@
     function check() {
         let N = parseInt(document.getElementById("number").value);
         let number = 1, countN;
+        let numBer = " ";
         for (countN = 0; countN < N; number++) {
             if (isPrime(number)) {
-                document.writeln(+number + ", ");
+                numBer += number + " ";
                 ++countN;
             }
         }
+        document.getElementById("demo").innerHTML = numBer;
     }
 </script>
 </body>
