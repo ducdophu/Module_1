@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả Temperature.</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(celsius) {
+            this.celsius = celsius;
+        }
+
+        celsius_to_Fahrenheit() {
+            return (9 * this.celsius / 5) + 32;
+        }
+
+        celsius_to_Kelvin() {
+            return this.celsius + 273.15;
+        }
+    }
+
+    let temperature = new Temperature(20);
+    document.writeln("Do F tuong ung la: " + temperature.celsius_to_Fahrenheit());
+    document.writeln("<br>");
+    document.writeln("Do K tuong ung la: " + temperature.celsius_to_Kelvin());
+</script>
+</body>
+</html>
